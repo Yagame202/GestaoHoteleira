@@ -13,7 +13,7 @@ public class Cliente extends Pessoa {
     private String observacao; // Opcional
 
     // Construtor vazio
-    public Cliente() {}
+    public Cliente(long id, String nomeCompleto, LocalDate dataNascimento, String documento, String pais, String estado, String cidade, boolean fidelidade, String observacao) {}
 
     // Construtor sem o id
     public Cliente(
@@ -105,5 +105,7 @@ public class Cliente extends Pessoa {
     public int hashCode() {
         return Objects.hash(super.hashCode(), id);
     }
+
+
 
 }
